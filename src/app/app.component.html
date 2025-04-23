@@ -1,16 +1,17 @@
-<h1>SoryCakes</h1>
-<p>Bienvenidos a SoryCakes, donde encontrarás los pasteles más deliciosos y personalizados para cada ocasión.</p>
-<div class="cake-gallery">
-  <div class="cake-item">
-    <img src="assets/cake1.jpg" alt="Pastel de chocolate">
-    <p>Pastel de Chocolate</p>
-  </div>
-  <div class="cake-item">
-    <img src="assets/cake2.jpg" alt="Pastel de vainilla">
-    <p>Pastel de Vainilla</p>
-  </div>
-  <div class="cake-item">
-    <img src="assets/cake3.jpg" alt="Pastel de fresa">
-    <p>Pastel de Fresa</p>
-  </div>
-</div>
+<h1>Practicando Ando</h1>
+<section>
+  <h2>Router Links</h2>
+  <nav>
+    <a routerLink="/">Home</a> |
+    <a routerLink="/about">About</a>
+  </nav>
+  <router-outlet></router-outlet>
+</section>
+<section>
+  <h2>Forms</h2>
+  <label for="entrada">
+    Cual es tu fruta favorita
+    <input type="text" id="entrada" [(ngModel)]="fruta" />
+  </label>
+  <h3>Hola como estas {{fruta}}</h3>
+</section>
