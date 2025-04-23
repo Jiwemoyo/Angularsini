@@ -1,0 +1,22 @@
+.cake-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.cake-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.cake-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cake-item p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
