@@ -9,9 +9,21 @@
 </section>
 <section>
   <h2>Forms</h2>
-  <label for="entrada">
-    Cual es tu fruta favorita
-    <input type="text" id="entrada" [(ngModel)]="fruta" />
+  <label for="formularin">Ingresa tu fruta favorita:
+    <input type="text" id="formularin" [(ngModel)]="fruta" />
   </label>
-  <h3>Hola como estas {{fruta}}</h3>
+  <button (click)="mostrarFruta()">Mostrar Fruta</button>
+  <h2>Reactive Forms</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+    <label>Name
+      <input type="text" formControlName="name" />
+    </label>
+    <label>Email
+      <input type="email" formControlName="email" />
+    </label>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+  <h4>Formulario De perfil</h4>
+  <p>Nombre:{{profileForm.value.name}}</p>
+  <p>Email:{{profileForm.value.email}}</p>
 </section>
