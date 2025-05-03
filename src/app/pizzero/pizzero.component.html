@@ -1,0 +1,8 @@
+<h2>¡Soy el Pizzero!</h2>
+<button (click)="mostrarIngredientes()">Ver Ingredientes</button>
+<button (click)="agregarQueso()">Agregar Queso Extra</button>
+<ul>
+  @for (item of ingredientes; track $index) {
+    <li>{{ item }}</li>
+  }
+</ul>

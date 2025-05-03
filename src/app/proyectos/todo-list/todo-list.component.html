@@ -1,0 +1,21 @@
+<h2>Lista de Tareas</h2>
+<form action="">
+  <input type="text" [(ngModel)]="nuevaTarea" name="tarea">
+  <button type="button" (click)="addTask()">Agergar tarea</button>
+</form>
+
+@for (tarea of tareas; track tarea.id) {
+  <ul>
+    @if (tarea.hecha) {
+      <label for="tarea.tarea">
+        <input type="checkbox" (change)="cambio($event,tarea.id)" id="tarea.tarea" [checked]="tarea.hecha" >
+        <s>{{ tarea.tarea }}</s>
+      </label>
+    }@else {
+      <label for="tarea.tarea">
+        <input type="checkbox" id="tarea.tarea" (change)="cambio($event,tarea.id)"[checked]="tarea.hecha" >
+      {{ tarea.tarea }}
+      </label>
+    }
+  </ul>
+}

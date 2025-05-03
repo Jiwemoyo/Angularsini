@@ -1,4 +1,4 @@
-<h1>Practicando Ando</h1>
+<!-- <h1>Practicando Ando</h1>
 <section>
   <h2>Router Links</h2>
   <nav>
@@ -26,4 +26,10 @@
   <h4>Formulario De perfil</h4>
   <p>Nombre:{{profileForm.value.name}}</p>
   <p>Email:{{profileForm.value.email}}</p>
+  <app-pizzero></app-pizzero>
+</section> -->
+
+<section>
+  <h2>Tareas Completadas: {{tareasCompletadas}}</h2>
+  <app-todo-list (tareasCompletadas)="addCompleteTask($event)"/>
 </section>
