@@ -4,11 +4,12 @@ import {FormsModule,ReactiveFormsModule,FormControl,FormGroup,Validators} from '
 import { PizzeroComponent } from './pizzero/pizzero.component';
 import { TodoListComponent } from './proyectos/todo-list/todo-list.component';
 import { DigitalClockComponent } from './proyectos/digital-clock/digital-clock.component';
+import { FormularinComponent } from './proyectos/formularin/formularin.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent],
+  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent,FormularinComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

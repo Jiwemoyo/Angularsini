@@ -1,0 +1,23 @@
+<form [formGroup]="datosPerfil" (ngSubmit)="handleSubmit()">
+  <label>
+    Nombre:
+    <input type="text" formControlName="nombre" />
+  </label>
+
+  <label>
+    Email:
+    <input type="email" formControlName="email" />
+  </label>
+
+  <label>
+    Información:
+    <input type="text" formControlName="texto" />
+  </label>
+
+  <button type="submit" [disabled]="!datosPerfil.valid">Enviar Info</button>
+</form>
+<app-recepcion-form
+  [nombreForm]="datosPerfil.get('nombre')?.value ?? ''"
+  [emailForm]="datosPerfil.get('email')?.value ?? ''"
+  [textoForm]="datosPerfil.get('texto')?.value ?? ''"
+/>
