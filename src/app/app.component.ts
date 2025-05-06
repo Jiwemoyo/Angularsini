@@ -3,11 +3,12 @@ import { RouterOutlet,RouterLink } from '@angular/router';
 import {FormsModule,ReactiveFormsModule,FormControl,FormGroup,Validators} from '@angular/forms';
 import { PizzeroComponent } from './pizzero/pizzero.component';
 import { TodoListComponent } from './proyectos/todo-list/todo-list.component';
+import { DigitalClockComponent } from './proyectos/digital-clock/digital-clock.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent],
+  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
