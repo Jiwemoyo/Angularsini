@@ -5,11 +5,13 @@ import { PizzeroComponent } from './pizzero/pizzero.component';
 import { TodoListComponent } from './proyectos/todo-list/todo-list.component';
 import { DigitalClockComponent } from './proyectos/digital-clock/digital-clock.component';
 import { FormularinComponent } from './proyectos/formularin/formularin.component';
+import { GaleriaComponent } from './proyectos/galeria/galeria.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent,FormularinComponent],
+  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent,FormularinComponent,GaleriaComponent,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

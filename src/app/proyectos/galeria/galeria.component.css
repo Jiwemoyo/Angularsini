@@ -1,0 +1,54 @@
+/* Contenedor principal de la galería */
+h3 {
+  text-align: start;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor de la galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Crear una cuadrícula flexible */
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-items: center; /* Centrar cada imagen dentro de su celda */
+  padding: 10px;
+}
+
+/* Estilo para el contenedor de cada imagen */
+figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 50px; /* Establecemos el tamaño fijo */
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #f6a44d;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la imagen dentro del figure */
+figure img {
+  width: 100%;  /* Ajustamos la imagen al tamaño del figure */
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen ocupe todo el área sin distorsionarse */
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo del figcaption (opcional, puedes quitarlo si no quieres descripción) */
+figcaption {
+  background-color: #f6a44d;
+  color: white;
+  padding: 2px;
+  font-size: 0.6rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Cuando el mouse pasa sobre la imagen, cambiar el color de fondo del figcaption */
+figure:hover figcaption {
+  background-color: #276860;
+}

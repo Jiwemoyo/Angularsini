@@ -1,0 +1,10 @@
+<h3>La galería de Pakito el del barrio</h3>
+
+<div class="galeria">
+  @for (imagen of imagenes; track $index) {
+    <figure>
+      <img src="{{imagen}}" alt="Imagen {{ $index }}">
+      <figcaption>Esta es una imagen {{ $index }}</figcaption>
+    </figure>
+  }
+</div>
