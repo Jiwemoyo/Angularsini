@@ -1,0 +1,11 @@
+<h3>Soy un bonito contador</h3>
+<div>
+
+  <p>{{numeroContador}}</p>
+  @if (numeroContador < 0) {
+    <p>El numero es negativo</p>
+  }
+  <button (click)="decrementar()">-</button>
+  <button (click)="aumentar()">+</button>
+
+</div>

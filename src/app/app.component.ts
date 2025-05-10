@@ -7,11 +7,12 @@ import { DigitalClockComponent } from './proyectos/digital-clock/digital-clock.c
 import { FormularinComponent } from './proyectos/formularin/formularin.component';
 import { GaleriaComponent } from './proyectos/galeria/galeria.component';
 import { CommonModule } from '@angular/common';
+import { ContadorComponent } from "./30days/contador/contador.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,FormsModule,ReactiveFormsModule,PizzeroComponent,TodoListComponent,DigitalClockComponent,FormularinComponent,GaleriaComponent,CommonModule],
+  imports: [RouterOutlet, RouterLink, FormsModule, ReactiveFormsModule, PizzeroComponent, TodoListComponent, DigitalClockComponent, FormularinComponent, GaleriaComponent, CommonModule, ContadorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
